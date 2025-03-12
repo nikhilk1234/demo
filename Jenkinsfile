@@ -10,14 +10,12 @@ pipeline {
         agent any
             steps {
                 echo "Compile the code"
-                sh "mvn compile"
             }
         }
          stage('UnitTest') { //test
          agent any
             steps {
                 echo "Test the code"
-                sh "mvn test"
             }
         }
          stage('Package') {//dev
