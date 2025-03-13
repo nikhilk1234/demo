@@ -25,7 +25,7 @@ pipeline {
             steps {
                script{
                   sshagent{['Slave2']}{
-                     sh "scp -o StrictHostKeyChecking=no server-script.sh ${Build_Server}:/home/ec2-user
+                     sh "scp -o StrictHostKeyChecking=no server-script.sh ${Build_Server}:/home/ec2-user"
                      sh "ssh -o StrictHostKeyChecking=no ${Build_Server} 'bash ~/server-script.sh'"
                   }
                }
