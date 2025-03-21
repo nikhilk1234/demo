@@ -10,7 +10,7 @@ then
   cd addressbook/
   git pull origin master 
 else
-    git clone https://github.com/nikhilk1234/demo.git
+    git clone https://github.com/nikhilk1234/addressbook.git
     cd addressbook/
 fi
 sudo docker build -t image /home/ec2-user/addressbook
